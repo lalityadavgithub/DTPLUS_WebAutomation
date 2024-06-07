@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Listener Test]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="extentReports.ExtentListener"/>
+  </listeners>
+  <test thread-count="5" name="CustomerEnrollment(failed)">
+    <classes>
+      <class name="Enrollments.NewCustomer">
+        <methods>
+          <include name="AddNewCardContinue"/>
+          <include name="KeyOfficialDetails"/>
+          <include name="GenerateOTP"/>
+          <include name="KycContinue"/>
+          <include name="CopyFormNumber"/>
+          <include name="VerifyOTP"/>
+          <include name="PermanentAdress"/>
+        </methods>
+      </class> <!-- Enrollments.NewCustomer -->
+    </classes>
+  </test> <!-- CustomerEnrollment(failed) -->
+</suite> <!-- Failed suite [Listener Test] -->
